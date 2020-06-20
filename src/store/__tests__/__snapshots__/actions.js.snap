@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test amount field change: should handle action with fetch errors for max value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": false,
+        "value": 5000,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action with fetch errors for max value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 5000,
+      "duration": 24,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action with fetch errors for max value 3`] = `
+Array [
+  Object {
+    "payload": "ERROR",
+    "type": "quote.error",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action with fetch errors for min value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": false,
+        "value": 1000,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action with fetch errors for min value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 1000,
+      "duration": 24,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action with fetch errors for min value 3`] = `
+Array [
+  Object {
+    "payload": "ERROR",
+    "type": "quote.error",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for max value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": false,
+        "value": 5000,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for max value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 5000,
+      "duration": 24,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for max value 3`] = `
+Array [
+  Object {
+    "payload": "DATA",
+    "type": "quote.success",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for min value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": false,
+        "value": 1000,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for min value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 1000,
+      "duration": 24,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test amount field change: should handle action without errors for min value 3`] = `
+Array [
+  Object {
+    "payload": "DATA",
+    "type": "quote.success",
+  },
+]
+`;
+
+exports[`Test amount field change: should mark validation error value above max 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": true,
+        "value": 5000,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test amount field change: should mark validation error value below min 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "amount",
+      "value": Object {
+        "isError": true,
+        "value": 999,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for max value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": false,
+        "value": 36,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for max value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 2000,
+      "duration": 36,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for max value 3`] = `
+Array [
+  Object {
+    "payload": "ERROR",
+    "type": "quote.error",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for min value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": false,
+        "value": 6,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for min value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 2000,
+      "duration": 6,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action with fetch errors for min value 3`] = `
+Array [
+  Object {
+    "payload": "ERROR",
+    "type": "quote.error",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for max value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": false,
+        "value": 36,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for max value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 2000,
+      "duration": 36,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for max value 3`] = `
+Array [
+  Object {
+    "payload": "DATA",
+    "type": "quote.success",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for min value 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": false,
+        "value": 6,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for min value 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 2000,
+      "duration": 6,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test duration field change: should handle action without errors for min value 3`] = `
+Array [
+  Object {
+    "payload": "DATA",
+    "type": "quote.success",
+  },
+]
+`;
+
+exports[`Test duration field change: should mark validation error value above max 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": true,
+        "value": 36,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test duration field change: should mark validation error value below min 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "field": "duration",
+      "value": Object {
+        "isError": true,
+        "value": 5,
+      },
+    },
+    "type": "form.input",
+  },
+]
+`;
+
+exports[`Test quote action: should handle quote fetching error 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 1000,
+      "duration": 6,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test quote action: should handle quote fetching error 2`] = `
+Array [
+  Object {
+    "payload": "ERROR",
+    "type": "quote.error",
+  },
+]
+`;
+
+exports[`Test quote action: should handle quote fetching success 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": 1000,
+      "duration": 6,
+    },
+    "type": "quote.fetch",
+  },
+]
+`;
+
+exports[`Test quote action: should handle quote fetching success 2`] = `
+Array [
+  Object {
+    "payload": "DATA",
+    "type": "quote.success",
+  },
+]
+`;

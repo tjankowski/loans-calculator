@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`For actions: should return same state for unknown action 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": null,
+    "isError": false,
+    "isFetching": false,
+  },
+}
+`;
+
+exports[`For actions: should set fetching error state 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": Object {
+      "error": "Error message",
+    },
+    "isError": true,
+    "isFetching": false,
+  },
+}
+`;
+
+exports[`For actions: should set fetching state 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": null,
+    "isError": false,
+    "isFetching": true,
+  },
+}
+`;
+
+exports[`For actions: should set fetching success state 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": Object {
+      "data": Array [
+        1,
+        2,
+        3,
+      ],
+    },
+    "isError": false,
+    "isFetching": false,
+  },
+}
+`;
+
+exports[`Initial state: should have valid inital state 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": null,
+    "isError": false,
+    "isFetching": false,
+  },
+}
+`;
+
+exports[`Initial state: should return initial state state without arguments 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": null,
+    "isError": false,
+    "isFetching": false,
+  },
+}
+`;
+
+exports[`Initial state: should return same state for without action 1`] = `
+Object {
+  "currency": Object {
+    "key": "GBP",
+    "label": "£",
+  },
+  "form": Object {
+    "amount": Object {
+      "isError": false,
+      "value": 2000,
+    },
+    "duration": Object {
+      "isError": false,
+      "value": 24,
+    },
+  },
+  "quote": Object {
+    "data": null,
+    "isError": false,
+    "isFetching": false,
+  },
+}
+`;
