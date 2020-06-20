@@ -7,12 +7,14 @@ export const StoreContext = createContext();
 export const StoreProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const actions = useActions(state, dispatch);
+  /*eslint-disable */
   useEffect(() => {
     actions.quote(
       state.form[FormFields.amount].value,
       state.form[FormFields.duration].value
     );
   }, []);
+  /*eslint-enable */
   return (
     <StoreContext.Provider value={{ state, actions }}>
       {children}
