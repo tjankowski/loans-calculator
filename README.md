@@ -3,6 +3,8 @@
 Responsive loan caluclator demo.
 Min and maximum values of the calculation attributes can be changed through constants. `vh` used as a unit for most UI properties to keep UI responsive to height of the window.
 
+[Demo](https://zealous-liskov-7aee97.netlify.app)
+
 Project structure:
 
 - `/api` - contains logic to fetch data from API
