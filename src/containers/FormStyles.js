@@ -109,3 +109,10 @@ export const Label = styled.label`
   color: ${Colors.green}30;
   display: block;
 `;
+
+export const Note = styled.div`
+  align-self: center;
+  padding: 0.5vh;
+  font-size: 1.25vh;
+  color: #4c956cdd;
+`;

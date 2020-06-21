@@ -15,6 +15,7 @@ import {
   StepsWrapper,
   Steps,
   Slider,
+  Note,
 } from "./FormStyles";
 
 function createMarks(values, unit) {
@@ -127,6 +128,10 @@ export default function FormComponent() {
           onBackspace={onBackspace(step, form[step].value, onFormChange)}
         />
       </Wrapper>
+      <Note>
+        * This is just a concept. Treeloan is a fictional company for the needs
+        of the project.
+      </Note>
       <Summary
         isInvalid={amount.isError || duration.isError}
         quote={quote}
