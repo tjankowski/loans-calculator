@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "./CommonStyles";
 import { Currency } from "../store/constants";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
@@ -43,10 +43,29 @@ const Value = styled.div`
   }
 `;
 
+const move = keyframes`
+  0%, 100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(0.5rem);
+    opacity: 0;
+  }
+
+  60% {
+    
+    transform: translate(-0.3rem);
+    opacity: 0;
+  }
+`;
+
 const Button = styled.button`
   white-space: nowrap;
   border-radius: 0.5rem;
   width: 14vh;
+  height: 6vh;
   padding: 2vh;
   font-size: 1.5vh;
   font-weight: bold;
@@ -59,8 +78,18 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
 
+  & > svg {
+    height: 1.5vh;
+    width: 1.5vh;
+    margin-left: 0.5vh;
+    transition: all 0.5s;
+  }
+
   &:hover,
   &:focus {
+    & > svg {
+      animation: ${move} 2s ease infinite;
+    }
   }
 `;
 
