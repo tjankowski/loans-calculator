@@ -49,6 +49,7 @@ const Tabs = styled.ul`
     & > a:visited,
     & > a {
       color: currentColor;
+      outline: none;
     }
   }
 `;
