@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: row;
   padding: 4vh;
   font-size: 1.5vh;
-  background: ${Colors.blue};
+  background: ${Colors.darkGreen};
   color: ${Colors.white};
   justify-content: space-between;
 

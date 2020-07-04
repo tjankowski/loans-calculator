@@ -92,7 +92,7 @@ export const ValueContainer = styled.div`
 export const Error = styled.div`
   position: absolute;
   top: 100%;
-  background: ${Colors.blue};
+  background: ${Colors.darkGreen};
   color: ${Colors.white};
   font-size: 1.5vh;
   text-align: center;
