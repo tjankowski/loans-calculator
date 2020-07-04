@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "./CommonStyles";
 import BackspaceOutlinedIcon from "@material-ui/icons/BackspaceOutlined";
 
@@ -10,25 +10,39 @@ const Container = styled.div`
   gap: 2vh;
 `;
 
+const backspace = keyframes`
+  0%, 100% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translate(-0.2rem);
+  }
+  60% {
+    transform: translate(0.1rem);
+  }
+`;
+
 const Button = styled.button`
   font-size: 4vh;
-  background: ${({ submit }) => (submit ? Colors.green : Colors.white)};
-  color: ${({ submit }) => (submit ? Colors.gray : Colors.gray)};
+  background: ${Colors.white};
+  color: ${Colors.gray};
   border-radius: 50%;
   border: none;
   box-shadow: 0 1rem 2rem rgba(40, 42, 46, 0.5);
   transition: box-shadow 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover,
   &:focus {
     color: ${Colors.gray};
-    box-shadow: 0 0.5rem 1rem rgba(40, 42, 46, 0.5);
+    box-shadow: 0 0.5rem 0.5rem rgba(40, 42, 46, 0.3);
   }
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   & > svg {
-    width: 3vh;
+    width: 2.5vh;
+    height: 2.5vh;
   }
 `;
 
@@ -36,6 +50,14 @@ const SecondaryButton = styled(Button)`
   background: ${Colors.transparent};
   color: ${Colors.gray};
   box-shadow: none;
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    color: ${Colors.green};
+    animation: ${backspace} 1.2s linear infinite;
+    box-shadow: none;
+  }
 `;
 
 const Keys = [7, 8, 9, 4, 5, 6, 1, 2, 3];
